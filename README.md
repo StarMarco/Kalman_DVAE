@@ -20,13 +20,17 @@ hidden within the control variables (they aren't used as control variables here 
 Hence, in the DVAE we introduced transition and measurement models. In the K-DVAE these are linear Gaussian state space models so that they are compatible with the Kalman filter. 
 
 Transition: 
+
 $$
 z_t = F_t z_{t-1} + u_t + w_t
 $$
+
 Measurement:
+
 $$
 y_t = H_t z_t + d_t + v_t
 $$
+
 where $y_t$ is the RUL, $z_t$ is the latent variable, $F_t$ are the transition matrix, $H_t$ is the measurement matrix, $u_t$ and $d_t$ are control variables, and $w_t$ and $v_t$ are noise terms. 
 Hence, $u_t$ and $d_t$ are outputs from neural networks which account for the nonlinearity of the problem. From the DVAE we know that the conditional variables should be noncausal and so $u_t$ and $d_t$
 must represent the sequence $x_{1:T}$. This makes the K-DVAE a sequence-to-sequence model which outputs a sequence of RUL values $y_{1:T}$ given a sequence of multivariate sensor signals $x_{1:T}$. 
