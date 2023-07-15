@@ -1,7 +1,7 @@
 # Kalman_DVAE
 
 *Note this code is research code used to test a models performance on a benchmark dataset. This is not optimized or designed for production/industry applications. I simply post it here as it may help 
-others understand my research or the topics presented here. 
+others understand my research or the topics presented here.* 
 
 A Dynamical Variational Autoencoder (DVAEs) that is trained using a Kalman filter (as opposed to an ELBO-based loss). This is applied to the CMAPSS turbofan engine dataset from NASA for Remaining Useful Life (RUL) estimation using sensor signals as inputs
 (data can be found in this repository or [here](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) under header 6. Turbofan Engine Degradation Simulation). 
