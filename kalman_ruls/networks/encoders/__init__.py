@@ -1,0 +1,2 @@
+from kalman_ruls.networks.encoders.bidirectionalGRU import BidirectionalGRU
+from kalman_ruls.networks.encoders.bidirectionalLSTM import BidirectionalLSTM
