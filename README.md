@@ -5,7 +5,7 @@ others understand my research or the topics presented here.*
 
 A Dynamical Variational Autoencoder (DVAEs) that is trained using a Kalman filter (as opposed to an ELBO-based loss). This is applied to the CMAPSS turbofan engine dataset from NASA for Remaining Useful Life (RUL) estimation using sensor signals as inputs
 (data can be found in this repository or [here](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) under header 6. Turbofan Engine Degradation Simulation). 
-The code here was used in my PhD thesis (which will be available soon, and I plan to update this page when it is). The code here is based on Chapter 7 of the thesis. There is a notebook that goes through
+The code here was used in my PhD thesis ([Degradation Vector Fields with Uncertainty Considerations](http://hdl.handle.net/20.500.11937/93343)). The code here is based on Chapter 7 of the thesis. There is a notebook that goes through
 a simple use case of the model for RUL estimation. This may be easier to understand than the training and testing scripts whose arguments try to account for many different cases the user may want to test.
 
 The training and testing scripts allow one to train and test models from the command line using arguments to perform different tests on a variety of sub-models used to construct a Kalman-DVAE (K-DVAE). 
